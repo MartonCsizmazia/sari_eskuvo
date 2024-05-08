@@ -14,7 +14,7 @@
 
 .handwriting{
   font-family: "Great Vibes", serif;
-  font-size: 2rem;
+  font-size: 3rem;
 }
 
 .generic-text{
@@ -43,8 +43,8 @@
 
 #kezdolap-content-text{
   position: relative;
-  top: 13rem;
-  font-size: 1.2rem;
+  top: 30rem;
+  font-size: 1.5rem;
   padding: 0 2rem;
 }
 
@@ -80,13 +80,18 @@
     height: 25rem;
   }
 
+  #kezdolap-content-text{
+    top: 13rem;
+    font-size: 1.5rem;
+    padding: 0 2rem;
+  }
+
   .handwriting{
     font-size: 2rem;
   }
 
   .generic-text{
-    font-size: 0.9rem;
-    padding: 0 0.5rem;
+    font-size: 1.2rem;
   }
 
   .decor1{width: 40%;
