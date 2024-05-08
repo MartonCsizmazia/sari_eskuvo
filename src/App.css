@@ -1,38 +1,70 @@
 .App {
+  /*padding-top: 3rem;*/
+}
+
+.decor1{
+  width: 20%;
+  margin-bottom: 0.7rem ;
+}
+
+.decor2{
+  width: 20%;
+  margin-top: 0.5rem;
+}
+
+.handwriting{
+  font-family: "Great Vibes", serif;
+  font-size: 2rem;
+}
+
+.generic-text{
+  font-family: SansSerif, serif;
+}
+
+#kezdolap{
+  padding-top: 3rem;
+  /*height: 100vh;*/
+  /*background-color: lightblue;*/
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
   color: white;
+
 }
 
-.App-link {
-  color: #61dafb;
+#kezdolap-content{
+  margin: 0 auto;
+  height: 25rem;
+  width: 70%;
+  background-size: cover; /* Cover the entire div */
+  background-position: center; /* Center the image */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#kezdolap-content-text{
+  position: relative;
+  top: 11rem;
+  font-size: 1.2rem;
 }
+
+#datum, #helyszin, #program{
+  padding-top: 3rem;
+  height: 50vh;
+  background-color: lightblue;
+  /*margin: 0 auto;*/
+  text-align: center;
+
+  background-size: cover; /* Cover the entire div */
+  background-position: center; /* Center the image */
+}
+
+/*.segment-title{*/
+/*  margin: 0 auto;*/
+/*  left: 50px;*/
+/*}*/
+
+
+
+/*#datum{*/
+/*  padding-top: 3rem;*/
+/*  height: 50vh;*/
+/*  background-color: lightgreen;*/
+/*}*/
+
