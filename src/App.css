@@ -1,5 +1,8 @@
 .App {
   /*padding-top: 3rem;*/
+  max-width: 60rem;
+  /*text-align: center;*/
+  margin: 0 auto;
 }
 
 .decor1{
@@ -33,7 +36,7 @@
 #kezdolap-content{
   margin: 0 auto;
   height: 44rem;
-  width: 70%;
+  /*max-width: 60rem;*/
   background-size: cover;
   /*background-size: cover; !* Cover the entire div *!*/
   background-position: center; /* Center the image */
@@ -48,30 +51,67 @@
   padding: 0 2rem;
 }
 
-#datum, #helyszin, #program{
-  padding-top: 3rem;
-  height: 50vh;
-  background-color: lightblue;
-  /*margin: 0 auto;*/
-  text-align: center;
+/*#datum, #helyszin, #program{*/
+/*  padding-top: 3rem;*/
+/*  !*height: 50vh;*!*/
+/*  */
+/*  !*margin: 0 auto;*!*/
+/*  text-align: center;*/
 
-  background-size: cover; /* Cover the entire div */
-  background-position: center; /* Center the image */
+/*  background-size: cover; !* Cover the entire div *!*/
+/*  background-position: center; !* Center the image *!*/
+/*}*/
+
+.segment-title{
+  margin: 1.3rem 0;
+  font-size: 3rem !important;
+  text-align: center;
 }
 
-/*.segment-title{*/
-/*  margin: 0 auto;*/
-/*  left: 50px;*/
-/*}*/
+#datum-outer {
+  color: white;
+}
 
+#datum-wrapper{
+  text-align: center;
+  margin: 0 auto;
+  height: 34rem;
+  background-size: cover;
+  background-position: top center; /* Center the image */
+  background-repeat: no-repeat;
+}
 
+.datum-content{
+  padding-top: 5rem;
+}
 
-/*#datum{*/
-/*  padding-top: 3rem;*/
-/*  height: 50vh;*/
-/*  background-color: lightgreen;*/
-/*}*/
+.date-text{
+  margin-bottom: 2rem;
 
+}
+
+.date-generic{
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.line-container{
+  display: flex;
+  align-items: center; /* Align items vertically */
+  gap: 2rem;
+  padding: 0 1rem;
+}
+
+.horizontal-line {
+  flex: 1; /* Take up remaining space */
+  border-bottom: 1px solid white; /* Adjust the color and thickness as needed */
+}
+
+.actual-date{
+  font-size: 1.2rem;
+  font-style: italic;
+  margin: 0 auto;
+}
 
 @media screen and (max-width: 420px) {
 
@@ -95,7 +135,12 @@
   }
 
   .decor1{width: 40%;
-    margin-bottom: 0.7rem ;}
+    margin-bottom: 0.7rem;
+  }
+
+  .line-container{
+    gap: 1rem;
+  }
 
 }
 

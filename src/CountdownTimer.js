@@ -35,15 +35,15 @@ const CountdownTimer = () => {
         <div className="countdown-timer">
             <div className="timer-item">
                 <span className="timer-value">{remainingDays}</span>
-                <span className="timer-label">Days</span>
+                <span className="timer-label">Nap</span>
             </div>
             <div className="timer-item">
                 <span className="timer-value">{remainingHours}</span>
-                <span className="timer-label">Hours</span>
+                <span className="timer-label">Óra</span>
             </div>
             <div className="timer-item">
                 <span className="timer-value">{remainingMinutes}</span>
-                <span className="timer-label">Minutes</span>
+                <span className="timer-label">Perc</span>
             </div>
         </div>
     );

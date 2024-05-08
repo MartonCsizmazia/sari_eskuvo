@@ -1,4 +1,41 @@
-.countdown-timer{
+.countdown-timer {
     display: flex;
+    justify-content: center; /* Center the timer items horizontally */
+    gap: 1rem;
+    color: #59442e;
+}
+
+.timer-item {
+    flex: 2; /* Prevent items from shrinking */
+    border: 3px double #59442e; /* Set border color to white */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
+    margin: 0 10px; /* Add space between boxes */
+    padding: 10px; /* Add padding for better spacing */
+}
+
+.timer-value {
+    font-size: 37px; /* Adjust font size as needed */
+}
+
+.timer-label {
+    font-size: 18px; /* Adjust font size as needed */
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 420px) {
+    .timer-value {
+        font-size: 25px; /* Decrease font size for smaller screens */
+    }
+
+    .timer-label {
+        font-size: 16px; /* Decrease font size for smaller screens */
+    }
+
+    .timer-item {
+        flex-basis: 100%; /* Set each item to take up full width on smaller screens */
+        margin: 10px 10px; /* Adjust margin for better spacing */
+    }
 }
