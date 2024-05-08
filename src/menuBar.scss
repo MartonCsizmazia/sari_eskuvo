@@ -108,12 +108,13 @@ $border: 1px solid $color;
     width: $width;
     height: $height;
     cursor: pointer;
+    margin-top: 8px;
 }
 
 //vastagsag
 $dd-height: $height/14;
 //szelesseg
-$dd-width: $width/3;
+$dd-width: $width/2.5;
 
 .dropdown {
     position: relative;
@@ -172,11 +173,12 @@ $mn-height: $height/7;
         cursor: pointer;
         position: relative;
         left: 10px;
+        font-size: 1.4rem;
     }
 
     .dropdown-title{
         padding: 14px 0px;
-        margin-right: -9px;
+        margin-right: -5px;
     }
 
     .dropdown-content {
@@ -184,7 +186,7 @@ $mn-height: $height/7;
         height: 0;
         opacity: 0;
         position: absolute;
-        margin-left: -3%;
+        margin-left: -6%;
         transition: all .5s ease;
         top: 48px;
         width: 100px;
@@ -194,7 +196,8 @@ $mn-height: $height/7;
 
     .dropdown-content.open {
         display: block;
-        height: 110px;
+        height: 163px;
+        width: 140px;
         opacity: 1;
         transform: translateY(0);
 
@@ -204,7 +207,8 @@ $mn-height: $height/7;
     .dropdown-item{
         display: none;
         cursor: pointer;
-        margin: 0.5rem 0;
+        margin: 0.7rem 0;
+        font-size: 1.4rem;
     }
 
 
