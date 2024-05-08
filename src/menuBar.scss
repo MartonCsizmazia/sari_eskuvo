@@ -1,0 +1,178 @@
+/* menuBar.css */
+
+.menu {
+    position: fixed;
+    width: 100%;
+    background-color: #333;
+    height: 3rem;
+    display: flex;
+    justify-content: center;
+    z-index: 3;
+}
+
+.menu-button{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.menu-button a {
+    display: block;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+}
+
+.menu-button:hover {
+    background-color: #ddd;
+    color: black;
+    text-decoration: none;
+}
+
+.mobile-dropdown{
+    display: none;
+}
+
+
+/*/////////////////////////////////////////////////////////////////*/
+
+
+$transition: 0.3s;
+$width: 40px;
+$height: 40px;
+$icon-margin: 5px;
+$per-row: 4;
+$per-col: 3;
+$total-width: ($width + 2 * $icon-margin)* 4;
+$total-height: 10+ ($height * $per-col) + ($icon-margin * $per-col * 2);
+$color: #fff;
+$border: 1px solid $color;
+
+
+@function pi() {
+    @return 3.14159265359;
+}
+
+@function pow($base, $exp) {
+    $value: $base;
+    @if $exp > 1 {
+        @for $i from 2 through $exp {
+            $value: $value * $base;
+        }
+    }
+    @if $exp < 1{
+        @for $i from 0 through -$exp {
+            $value: $value / $base;
+        }
+    }
+    @return $value;
+}
+
+
+@function fact($num) {
+    $fact: 1;
+    @if $num > 0{
+        @for $i from 1 through $num {
+            $fact: $fact * $i;
+        }
+    }
+    @return $fact;
+}
+
+@function rad($angle) {
+    $unit: unit($angle);
+    $unitless: $angle / ($angle * 0 + 1);
+    // If the angle has 'deg' as unit, convert to radians.
+    @if $unit == deg {
+        $unitless: $unitless / 180 * pi();
+    }
+    @return $unitless;
+}
+
+@function cos($angle) {
+    $cos: 0;
+    $angle: rad($angle);
+    // Iterate a bunch of times.
+    @for $i from 0 through 10 {
+        $cos: $cos + pow(-1, $i) * pow($angle, 2 * $i) / fact(2 * $i);
+    }
+    @return $cos;
+}
+
+
+.icon {
+    margin: $icon-margin;
+    width: $width;
+    height: $height;
+    cursor: pointer;
+}
+
+//vastagsag
+$dd-height: $height/14;
+//szelesseg
+$dd-width: $width/3;
+
+.dropdown {
+    position: relative;
+    margin: $height/2.2 $width/4;
+
+    transition: $transition;
+
+    &:before,
+    &:after {
+        transition: $transition;
+        content: ' ';
+        position: absolute;
+        width: $dd-width;
+        height: $dd-height;
+        background: $color;
+        border-radius: $dd-width;
+
+    }
+
+    &:before {
+        left: -$dd-width/2 * cos(45deg) + ($dd-height/3);
+        transform: rotate(45deg);
+    }
+    &:after {
+        left: $dd-width/2*cos(45deg) - ($dd-height/3);
+        transform: rotate(-45deg);
+    }
+}
+
+#dropdown-3 {
+    &.close {
+        &:before{
+            transform: rotate(-45deg);
+        }
+        &:after{
+            transform: rotate(45deg);
+        }
+    }
+}
+
+$mn-width: $width*6/8;
+$mn-height: $height/7;
+
+
+@media screen and (max-width: 420px) {
+
+    .mobile-dropdown{
+        display: flex;
+        color: white;
+    }
+
+    .dropdown-title{
+        padding: 14px 0px;
+        margin-right: -9px;
+    }
+
+    .menu-button{
+        display: none
+    }
+
+}
+

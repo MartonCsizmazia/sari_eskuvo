@@ -24,7 +24,7 @@ const App = () => {
                             <br/>
                             <span className="generic-text">Szeretettel hívunk meg Titeket, hogy együtt ünnepeljük esküvőnk napját.</span>
                         </div>
-                        <img className="decor2" src={decorImage2} alt="Decor Image 2"/>
+                        {/*<img className="decor2" src={decorImage2} alt="Decor Image 2"/>*/}
                     </div>
                 </div>
             </div>
