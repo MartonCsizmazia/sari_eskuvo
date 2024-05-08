@@ -165,6 +165,12 @@ $mn-height: $height/7;
         color: white;
     }
 
+    #dropdown-visible-text{
+        display: flex;
+        color: white;
+        cursor: pointer;
+    }
+
     .dropdown-title{
         padding: 14px 0px;
         margin-right: -9px;

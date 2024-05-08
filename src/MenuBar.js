@@ -2,32 +2,29 @@ import React, { useEffect } from 'react';
 import './menuBar.scss';
 
 const MenuBar = () => {
-
     useEffect(() => {
-        const handleClick = (event) => {
-            const isArrowClicked = event.target.closest('#icon-3');
-            const dropdown = document.getElementById('dropdown-3');
+        const handleClick = (e) => {
+            const dropdown3 = document.getElementById('dropdown-3');
+            const dropdownVisible = document.getElementById('dropdown-visible-text');
 
-            if (isArrowClicked) {
-                // Toggle the 'close' class if the arrow is clicked
-                dropdown.classList.toggle('close');
+            // Check if the click occurred on the icon
+            if (dropdownVisible.contains(e.target)) {
+                // Toggle the 'close' class to rotate the icon
+                dropdown3.classList.toggle('close');
             } else {
-                // Remove the 'close' class if clicking outside the arrow
-                dropdown.classList.remove('close');
+                // Click occurred outside the dropdown, remove the 'close' class to reset the icon position
+                dropdown3.classList.remove('close');
             }
         };
 
-        const icon3 = document.getElementById('icon-3');
-        icon3.addEventListener('click', handleClick);
+        // Add event listener for clicks on the document body
+        document.body.addEventListener('click', handleClick);
 
-        // Add a click event listener to the document to handle clicks anywhere on the page
-        document.addEventListener('click', handleClick);
-
+        // Remove event listener when component unmounts
         return () => {
-            icon3.removeEventListener('click', handleClick);
-            document.removeEventListener('click', handleClick);
+            document.body.removeEventListener('click', handleClick);
         };
-    }, []);
+    }, []); // Empty dependency array ensures this effect runs only once, similar to componentDidMount
 
     const scrollToSection = (id, e) => {
         e.preventDefault();
@@ -41,12 +38,16 @@ const MenuBar = () => {
             <div className="menu-button" onClick={(e) => scrollToSection('datum', e)}><a>Dátum</a></div>
             <div className="menu-button" onClick={(e) => scrollToSection('helyszin', e)}><a>Helyszín</a></div>
             <div className="menu-button" onClick={(e) => scrollToSection('program', e)}><a>Program</a></div>
+            {/* Add more menu items as needed */}
 
             <div className="mobile-dropdown">
-                <a className="dropdown-title">Menü</a>
-                <div id="icon-3" className="icon">
-                    <div id="dropdown-3" className="dropdown"></div>
+                <div id="dropdown-visible-text">
+                    <a className="dropdown-title">Menü</a>
+                    <div id="icon-3" className="icon">
+                        <div id="dropdown-3" className="dropdown"></div>
+                    </div>
                 </div>
+
             </div>
         </div>
     );
