@@ -1,8 +1,9 @@
 {
   "files": {
-    "main.css": "/static/css/main.527555a3.css",
-    "main.js": "/static/js/main.a197c369.js",
+    "main.css": "/static/css/main.05f9e8e1.css",
+    "main.js": "/static/js/main.4c8d585e.js",
     "static/media/IMG_3224-min.JPG": "/static/media/IMG_3224-min.2f83ad8f91d3c897d870.JPG",
+    "static/media/DSC06939-min.JPG": "/static/media/DSC06939-min.b8097c6b908b61733796.JPG",
     "static/media/great-vibes-latin-400-normal.woff2": "/static/media/great-vibes-latin-400-normal.be0bf4706b438d27744a.woff2",
     "static/media/Nevtelen-terv-17.png": "/static/media/Nevtelen-terv-17.1f8f75dcc59047993d2b.png",
     "static/media/great-vibes-latin-400-normal.woff": "/static/media/great-vibes-latin-400-normal.57d7006f69c6a02f9054.woff",
@@ -12,11 +13,11 @@
     "static/media/great-vibes-vietnamese-400-normal.woff2": "/static/media/great-vibes-vietnamese-400-normal.f9dc7aec50196d6a92d0.woff2",
     "static/media/great-vibes-vietnamese-400-normal.woff": "/static/media/great-vibes-vietnamese-400-normal.f3e35abe465a0f6063b4.woff",
     "index.html": "/index.html",
-    "main.527555a3.css.map": "/static/css/main.527555a3.css.map",
-    "main.a197c369.js.map": "/static/js/main.a197c369.js.map"
+    "main.05f9e8e1.css.map": "/static/css/main.05f9e8e1.css.map",
+    "main.4c8d585e.js.map": "/static/js/main.4c8d585e.js.map"
   },
   "entrypoints": [
-    "static/css/main.527555a3.css",
-    "static/js/main.a197c369.js"
+    "static/css/main.05f9e8e1.css",
+    "static/js/main.4c8d585e.js"
   ]
 }
