@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/sari_eskuvo/static/css/main.d72bb8a8.css",
+    "main.js": "/sari_eskuvo/static/js/main.f36b7b81.js",
+    "static/media/IMG_3224-min.JPG": "/sari_eskuvo/static/media/IMG_3224-min.2f83ad8f91d3c897d870.JPG",
+    "static/media/great-vibes-latin-400-normal.woff2": "/sari_eskuvo/static/media/great-vibes-latin-400-normal.be0bf4706b438d27744a.woff2",
+    "static/media/Nevtelen-terv-17.png": "/sari_eskuvo/static/media/Nevtelen-terv-17.1f8f75dcc59047993d2b.png",
+    "static/media/great-vibes-latin-400-normal.woff": "/sari_eskuvo/static/media/great-vibes-latin-400-normal.57d7006f69c6a02f9054.woff",
+    "static/media/great-vibes-latin-ext-400-normal.woff2": "/sari_eskuvo/static/media/great-vibes-latin-ext-400-normal.afd1d5ce8e6ecd213f48.woff2",
+    "static/media/great-vibes-latin-ext-400-normal.woff": "/sari_eskuvo/static/media/great-vibes-latin-ext-400-normal.57e464dd9bdc022fa4cc.woff",
+    "static/media/Nevtelen-terv-18.png": "/sari_eskuvo/static/media/Nevtelen-terv-18.6da90fb5f0fde4793800.png",
+    "static/media/great-vibes-vietnamese-400-normal.woff2": "/sari_eskuvo/static/media/great-vibes-vietnamese-400-normal.f9dc7aec50196d6a92d0.woff2",
+    "static/media/great-vibes-vietnamese-400-normal.woff": "/sari_eskuvo/static/media/great-vibes-vietnamese-400-normal.f3e35abe465a0f6063b4.woff",
+    "index.html": "/sari_eskuvo/index.html",
+    "main.d72bb8a8.css.map": "/sari_eskuvo/static/css/main.d72bb8a8.css.map",
+    "main.f36b7b81.js.map": "/sari_eskuvo/static/js/main.f36b7b81.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d72bb8a8.css",
+    "static/js/main.f36b7b81.js"
+  ]
+}
