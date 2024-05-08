@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/static/css/main.8b3021ad.css",
+    "main.css": "/static/css/main.1a3ad52b.css",
     "main.js": "/static/js/main.c6c5ad2e.js",
     "static/media/IMG_3224-min.JPG": "/static/media/IMG_3224-min.2f83ad8f91d3c897d870.JPG",
     "static/media/great-vibes-latin-400-normal.woff2": "/static/media/great-vibes-latin-400-normal.be0bf4706b438d27744a.woff2",
@@ -12,11 +12,11 @@
     "static/media/great-vibes-vietnamese-400-normal.woff2": "/static/media/great-vibes-vietnamese-400-normal.f9dc7aec50196d6a92d0.woff2",
     "static/media/great-vibes-vietnamese-400-normal.woff": "/static/media/great-vibes-vietnamese-400-normal.f3e35abe465a0f6063b4.woff",
     "index.html": "/index.html",
-    "main.8b3021ad.css.map": "/static/css/main.8b3021ad.css.map",
+    "main.1a3ad52b.css.map": "/static/css/main.1a3ad52b.css.map",
     "main.c6c5ad2e.js.map": "/static/js/main.c6c5ad2e.js.map"
   },
   "entrypoints": [
-    "static/css/main.8b3021ad.css",
+    "static/css/main.1a3ad52b.css",
     "static/js/main.c6c5ad2e.js"
   ]
 }
