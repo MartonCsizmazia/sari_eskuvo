@@ -1,7 +1,9 @@
-import React, { useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import './menuBar.scss';
 
 const MenuBar = () => {
+    const [dropdownOpen, setDropdownOpen] = useState(false);
+
     useEffect(() => {
         const handleClick = (e) => {
             const dropdown3 = document.getElementById('dropdown-3');
@@ -11,9 +13,13 @@ const MenuBar = () => {
             if (dropdownVisible.contains(e.target)) {
                 // Toggle the 'close' class to rotate the icon
                 dropdown3.classList.toggle('close');
+                // Toggle dropdown open state
+                setDropdownOpen(!dropdownOpen);
             } else {
                 // Click occurred outside the dropdown, remove the 'close' class to reset the icon position
                 dropdown3.classList.remove('close');
+                // Close dropdown
+                setDropdownOpen(false);
             }
         };
 
@@ -24,7 +30,7 @@ const MenuBar = () => {
         return () => {
             document.body.removeEventListener('click', handleClick);
         };
-    }, []); // Empty dependency array ensures this effect runs only once, similar to componentDidMount
+    }, [dropdownOpen]); // Re-run effect when dropdownOpen state changes
 
     const scrollToSection = (id, e) => {
         e.preventDefault();
@@ -48,6 +54,12 @@ const MenuBar = () => {
                     </div>
                 </div>
 
+                <div className={`dropdown-content ${dropdownOpen ? 'open' : ''}`}>
+                    <div className="dropdown-item" onClick={(e) => scrollToSection('kezdolap', e)}><a>Kezdőlap</a></div>
+                    <div className="dropdown-item" onClick={(e) => scrollToSection('datum', e)}><a>Dátum</a></div>
+                    <div className="dropdown-item" onClick={(e) => scrollToSection('helyszin', e)}><a>Helyszín</a></div>
+                    <div className="dropdown-item" onClick={(e) => scrollToSection('program', e)}><a>Program</a></div>
+                </div>
             </div>
         </div>
     );

@@ -19,9 +19,7 @@ const App = () => {
                         {/*<div className="segment-title">Kezdőlap</div>*/}
                         <img className="decor1" src={decorImage1} alt="Decor Image 1"/>
                         <div>
-                            <span className="handwriting">Sári & Peti</span>
-                            <br/>
-                            <br/>
+                            <div className="handwriting">Sári & Peti</div>
                             <span className="generic-text">Szeretettel hívunk meg Titeket, hogy együtt ünnepeljük esküvőnk napját.</span>
                         </div>
                         {/*<img className="decor2" src={decorImage2} alt="Decor Image 2"/>*/}

@@ -43,7 +43,7 @@
 
 #kezdolap-content-text{
   position: relative;
-  top: 12rem;
+  top: 13rem;
   font-size: 1.2rem;
   padding: 0 2rem;
 }
@@ -75,12 +75,17 @@
 
 @media screen and (max-width: 420px) {
 
+  #kezdolap-content {
+    width: 100%;
+  }
+
   .handwriting{
     font-size: 2rem;
   }
 
   .generic-text{
-    font-size: 0.8rem;
+    font-size: 0.9rem;
+    padding: 0 0.5rem;
   }
 
   .decor1{width: 40%;

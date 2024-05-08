@@ -3,7 +3,7 @@
 .menu {
     position: fixed;
     width: 100%;
-    background-color: #333;
+    background-color: #333c;
     height: 3rem;
     display: flex;
     justify-content: center;
@@ -161,20 +161,51 @@ $mn-height: $height/7;
 @media screen and (max-width: 420px) {
 
     .mobile-dropdown{
-        display: flex;
+        display: block;
         color: white;
+        align-content: center;
     }
 
     #dropdown-visible-text{
         display: flex;
         color: white;
         cursor: pointer;
+        position: relative;
+        left: 18px;
     }
 
     .dropdown-title{
         padding: 14px 0px;
         margin-right: -9px;
     }
+
+    .dropdown-content {
+        background: rgba(grey, 60%); /* RGBA color with 50% opacity */
+        height: 0;
+        opacity: 0;
+        position: absolute;
+        transition: all .5s ease;
+        top: 48px;
+        width: 100px;
+        margin: 0 auto; /* Center horizontally */
+        text-align: center;
+    }
+
+    .dropdown-content.open {
+        display: block;
+        height: 110px;
+        opacity: 1;
+        transform: translateY(0);
+
+        .dropdown-item{display: block}
+    }
+
+    .dropdown-item{
+        display: none;
+        cursor: pointer;
+        margin: 0.5rem 0;
+    }
+
 
     .menu-button{
         display: none
