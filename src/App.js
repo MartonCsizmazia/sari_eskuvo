@@ -26,6 +26,7 @@ const App = () => {
                     </div>
                 </div>
             </div>
+
             <div id="datum">
                 <div className="segment-title">
                     Dátum
@@ -33,9 +34,13 @@ const App = () => {
                     <CountdownTimer/> {/* Place the CountdownTimer component here */}
                 </div>
             </div>
+
+
             <div id="helyszin">
                 <div className="segment-title">Helyszín</div>
             </div>
+
+
             <div id="program">
                 <div className="segment-title">Program</div>
             </div>

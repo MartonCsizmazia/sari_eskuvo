@@ -43,7 +43,7 @@ const MenuBar = () => {
             <div className="menu-button" onClick={(e) => scrollToSection('kezdolap', e)}><a>Kezdőlap</a></div>
             <div className="menu-button" onClick={(e) => scrollToSection('datum', e)}><a>Dátum</a></div>
             <div className="menu-button" onClick={(e) => scrollToSection('helyszin', e)}><a>Helyszín</a></div>
-            <div className="menu-button" onClick={(e) => scrollToSection('program', e)}><a>Program</a></div>
+            <div className="menu-button" onClick={(e) => scrollToSection('program', e)}><a>Fontos Tudnivalók</a></div>
             {/* Add more menu items as needed */}
 
             <div className="mobile-dropdown">
@@ -58,7 +58,7 @@ const MenuBar = () => {
                     <div className="dropdown-item" onClick={(e) => scrollToSection('kezdolap', e)}><a>Kezdőlap</a></div>
                     <div className="dropdown-item" onClick={(e) => scrollToSection('datum', e)}><a>Dátum</a></div>
                     <div className="dropdown-item" onClick={(e) => scrollToSection('helyszin', e)}><a>Helyszín</a></div>
-                    <div className="dropdown-item" onClick={(e) => scrollToSection('program', e)}><a>Program</a></div>
+                    <div className="dropdown-item" onClick={(e) => scrollToSection('program', e)}><a>Fontos Tudnivalók</a></div>
                 </div>
             </div>
         </div>
