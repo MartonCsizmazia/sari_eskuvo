@@ -48,6 +48,7 @@ const App = () => {
                                 <div className="actual-date"> 2024. Október 5.</div>
                                 <div className="horizontal-line"></div>
                             </div>
+                            <div className="date-generic2">Budapest, Gückler Károly kilátó, 15:00</div>
                         </div>
                         <CountdownTimer/> {/* Place the CountdownTimer component here */}
                     </div>
@@ -62,10 +63,39 @@ const App = () => {
             <img className="decor decor5" src={decorImage4} alt="Decor Image 5"/>
             <div id="helyszin-outer">
                 <div className="segment-title handwriting">Helyszín & tudnivalók</div>
-                <div></div>
+                <div className="helyszin-es-tudnivalok">
+                    <div className="helyszin-container">
+                        <div className="helyszin-title">
+                            Helyszín
+                        </div>
+                        <div className="helyszin-text">
+                            <div className="sub-title">Szertatás:</div>
+                            <div className="sub-text">&#8287;&#8287;&#8287;Gückler Károly kilátó, a Hármashatár-hegy tetején</div>
+                            <div className="sub-title">Vacsora és lagzi:</div>
+                            <div className="sub-text">&#8287;&#8287;&#8287;Budapest, Hármashatárhegyi út, 3. -Horizont Rendezvényház</div>
+                        </div>
+                    </div>
+                    <div className="helyszin-container">
+                        <div className="helyszin-title">
+                            Tudnivalók
+                        </div>
+                        <div className="helyszin-text">
+                            <div className="sub-title">Kezdés:</div>
+                            <div className="sub-text">&#8287;&#8287;&#8287;15:00
+                            </div>
+                            <div className="sub-title">Szállás:</div>
+                            <div className="sub-text">&#8287;&#8287;&#8287;Korlátozott mértékben, így előre kell egyeztetnünk. Kérlek hívd a vőlegényt
+                                (+36703486197) vagy a menyasszonyt (+36301952985), ha szükséged lesz a helyszínen szállásra
+                            </div>
+                        </div>
+                    </div>
+                    <img className="decor decor6" src={decorImage4} alt="Decor Image 6"/>
+                </div>
             </div>
-            <img className="decor decor6" src={decorImage4} alt="Decor Image 6"/>
 
+
+            <div className="helyszin-utani-kep" style={{backgroundImage: `url(${backgroundImage3})`}}>
+            </div>
 
             {/*<div className="datum-utani-kep" style={{backgroundImage: `url(${backgroundImage3})`}}>*/}
             {/*</div>*/}
