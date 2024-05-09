@@ -2,6 +2,7 @@
 .menu {
   position: fixed;
   width: 100%;
+  max-width: 60rem;
   background-color: #333c;
   height: 3rem;
   display: flex;

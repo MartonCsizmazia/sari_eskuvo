@@ -1,8 +1,9 @@
 .App {
   /*padding-top: 3rem;*/
-  max-width: 60rem;
+  max-width: 105rem;
   /*text-align: center;*/
   margin: 0 auto;
+  font-family: "Cormorant Garamond", serif;
 }
 
 .decor1{
@@ -46,7 +47,7 @@
 
 #kezdolap-content-text{
   position: relative;
-  top: 30rem;
+  top: 25rem;
   font-size: 1.5rem;
   padding: 0 2rem;
 }
@@ -64,8 +65,14 @@
 
 .segment-title{
   margin: 1.3rem 0;
+  padding: 1.3rem 0;
   font-size: 3rem !important;
   text-align: center;
+}
+
+#datum{
+  position: relative;
+  bottom: 3rem;
 }
 
 #datum-outer {
@@ -75,23 +82,23 @@
 #datum-wrapper{
   text-align: center;
   margin: 0 auto;
-  height: 34rem;
+  /*height: 34rem;*/
   background-size: cover;
   background-position: top center; /* Center the image */
   background-repeat: no-repeat;
 }
 
 .datum-content{
-  padding-top: 5rem;
+
 }
 
 .date-text{
   margin-bottom: 2rem;
-
+  color: black;
 }
 
 .date-generic{
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   margin-bottom: 1rem;
 }
 
@@ -104,13 +111,21 @@
 
 .horizontal-line {
   flex: 1; /* Take up remaining space */
-  border-bottom: 1px solid white; /* Adjust the color and thickness as needed */
+  border-bottom: 1px solid black; /* Adjust the color and thickness as needed */
 }
 
 .actual-date{
   font-size: 1.2rem;
   font-style: italic;
   margin: 0 auto;
+}
+
+#datum-utani-kep{
+  margin: 4rem  auto 0 auto;
+  height: 24rem;
+  background-size: cover;
+  background-position: top center; /* Center the image */
+  background-repeat: no-repeat;
 }
 
 @media screen and (max-width: 420px) {
