@@ -33,7 +33,7 @@ const App = () => {
             </div>
 
             <div id="datum"></div>
-            <img className="decor3" src={decorImage3} alt="Decor Image 3"/>
+            <img className="decor decor3" src={decorImage3} alt="Decor Image 3"/>
             <div id="datum-outer">
                 <div className="segment-title handwriting" style={{color: "black"}}>
                     Dátum
@@ -53,18 +53,18 @@ const App = () => {
                     </div>
                 </div>
             </div>
-            <img className="decor4" src={decorImage3} alt="Decor Image 4"/>
+            <img className="decor decor4" src={decorImage3} alt="Decor Image 4"/>
 
             <div className="datum-utani-kep" style={{backgroundImage: `url(${backgroundImage2})`}}>
             </div>
 
             <div id="helyszin"></div>
-            <img className="decor5" src={decorImage4} alt="Decor Image 5"/>
+            <img className="decor decor5" src={decorImage4} alt="Decor Image 5"/>
             <div id="helyszin-outer">
                 <div className="segment-title handwriting">Helyszín & tudnivalók</div>
                 <div></div>
             </div>
-            <img className="decor6" src={decorImage4} alt="Decor Image 6"/>
+            <img className="decor decor6" src={decorImage4} alt="Decor Image 6"/>
 
 
             {/*<div className="datum-utani-kep" style={{backgroundImage: `url(${backgroundImage3})`}}>*/}
