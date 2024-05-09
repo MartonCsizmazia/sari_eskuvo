@@ -2,7 +2,7 @@
 .menu {
   position: fixed;
   width: 100%;
-  max-width: 60rem;
+  max-width: 105rem;
   background-color: #333c;
   height: 3rem;
   display: flex;
@@ -95,7 +95,7 @@
 
   .dropdown-content.open {
     display: block;
-    height: 185px;
+    height: 157px;
     width: 170px;
     opacity: 1;
     transform: translateY(0); }

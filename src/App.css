@@ -16,6 +16,39 @@
   margin-top: 0.5rem;
 }
 
+
+/*VIRAGOK*/
+.decor3{
+  height: 28vw;
+  /*margin-top: 0.5rem;*/
+  position: absolute;
+  right: 0;
+}
+
+.decor4{
+  height: 28vw;
+  position: relative;
+  left: 0;
+  rotate: 180deg;
+  bottom: 77px;
+  /*top: 200vw;*/
+}
+
+.decor5{
+  height: 22vw;
+  position: absolute;
+  left: 0;
+  rotate: 270deg;
+}
+
+.decor6{
+  height: 22vw;
+  position: absolute;
+  right: 0;
+  rotate: 90deg;
+}
+/*VIRAGOK*/
+
 .handwriting{
   font-family: "Great Vibes", serif;
   font-size: 3rem;
@@ -64,7 +97,6 @@
 /*}*/
 
 .segment-title{
-  margin: 1.3rem 0;
   padding: 1.3rem 0;
   font-size: 3rem !important;
   text-align: center;
@@ -120,8 +152,8 @@
   margin: 0 auto;
 }
 
-#datum-utani-kep{
-  margin: 4rem  auto 0 auto;
+.datum-utani-kep{
+  margin-top: -80px;
   height: 24rem;
   background-size: cover;
   background-position: top center; /* Center the image */

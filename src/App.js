@@ -4,8 +4,11 @@ import MenuBar from './MenuBar';
 import './App.css';
 import backgroundImage from './pictures/IMG_3224-min.JPG';
 import backgroundImage2 from './pictures/DSC06939-min.JPG';
+import backgroundImage3 from './pictures/IMG_3209-min.JPG';
 import decorImage1 from './pictures/Nevtelen-terv-17.png';
 import decorImage2 from './pictures/Nevtelen-terv-18.png';
+import decorImage3 from './pictures/9.png';
+import decorImage4 from './pictures/Nevtelen-terv-25.png';
 import CountdownTimer from "./CountdownTimer";
 import "@fontsource/great-vibes"
 
@@ -22,7 +25,7 @@ const App = () => {
                         <img className="decor1" src={decorImage1} alt="Decor Image 1"/>
                         <div>
                             <div className="handwriting">Sári & Peti</div>
-                            <span className="generic-text">Szeretettel hívunk meg Titeket, hogy együtt ünnepeljük esküvőnk napját.</span>
+                            <span className="generic-text">Szeretettel hívunk meg Titeket, hogy együtt ünnepeljük az esküvőnk napját.</span>
                         </div>
                         {/*<img className="decor2" src={decorImage2} alt="Decor Image 2"/>*/}
                     </div>
@@ -30,6 +33,7 @@ const App = () => {
             </div>
 
             <div id="datum"></div>
+            <img className="decor3" src={decorImage3} alt="Decor Image 3"/>
             <div id="datum-outer">
                 <div className="segment-title handwriting" style={{color: "black"}}>
                     Dátum
@@ -46,24 +50,28 @@ const App = () => {
                             </div>
                         </div>
                         <CountdownTimer/> {/* Place the CountdownTimer component here */}
-                        <div id="helyszin"></div>
                     </div>
                 </div>
             </div>
+            <img className="decor4" src={decorImage3} alt="Decor Image 4"/>
 
-            <div id="datum-utani-kep" style={{backgroundImage: `url(${backgroundImage2})`}}>
-
+            <div className="datum-utani-kep" style={{backgroundImage: `url(${backgroundImage2})`}}>
             </div>
 
-
+            <div id="helyszin"></div>
+            <img className="decor5" src={decorImage4} alt="Decor Image 5"/>
             <div id="helyszin-outer">
-                <div className="segment-title handwriting">Helyszín</div>
+                <div className="segment-title handwriting">Helyszín & tudnivalók</div>
+                <div></div>
             </div>
+            <img className="decor6" src={decorImage4} alt="Decor Image 6"/>
 
 
-            <div id="program">
-                <div className="segment-title handwriting">Fontos tudnivalók</div>
-            </div>
+            {/*<div className="datum-utani-kep" style={{backgroundImage: `url(${backgroundImage3})`}}>*/}
+            {/*</div>*/}
+            {/*<div id="program">*/}
+            {/*    <div className="segment-title handwriting">Fontos tudnivalók</div>*/}
+            {/*</div>*/}
             {/* Add more sections as needed */}
         </div>
     );
