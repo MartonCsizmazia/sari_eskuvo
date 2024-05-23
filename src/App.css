@@ -89,8 +89,8 @@
 
 
 .segment-title{
-  padding: 1.3rem 0;
-  font-size: 5rem !important;
+  padding: 1.3rem;
+  font-size: 4rem !important;
   text-align: center;
 }
 
@@ -145,7 +145,7 @@
 
 .date-generic2{
   margin-top: 1rem;
-  font-size: 0.8rem;
+  font-size: 1.2rem;
 }
 
 .datum-utani-kep{
@@ -159,6 +159,10 @@
 #helyszin{
   position: relative;
   bottom: 3rem;
+}
+
+.andsign{
+  margin-bottom: -1rem;
 }
 
 .helyszin-es-tudnivalok{
@@ -185,16 +189,17 @@
 }
 
 .helyszin-title {
-  font-family: "Cormorant Garamond", sans-serif;
+  font-family: "Cormorant Garamond", serif;
   font-size: 1.5rem; /* Increased font size for title */
   margin-bottom: 0.5rem; /* Added margin bottom for spacing between title and text */
+  text-align: center;
 }
 
 .helyszin-text {
-  font-family: Arial, sans-serif; /* Changed font family for text */
-  font-size: 1rem; /* Adjusted font size for text */
+  font-family: "Cormorant Garamond", serif; /* Changed font family for text */
+  font-size: 1.5rem; /* Adjusted font size for text */
   line-height: 1.5; /* Increased line height for better readability */
-  text-align: justify;
+  text-align: center;
 }
 
 .sub-title{
@@ -267,7 +272,7 @@
   }
 
   #kezdolap-content-text{
-    top: 12rem;
+    top: 11rem;
     font-size: 1.5rem;
     padding: 0 2rem;
   }
@@ -290,6 +295,10 @@
 
   .datum-utani-kep{
     height: 16rem;
+  }
+
+  .helyszin-text {
+    font-size: 1rem; /* Adjusted font size for text */
   }
 }
 

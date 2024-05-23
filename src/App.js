@@ -36,13 +36,13 @@ const App = () => {
             <img className="decor decor3" src={decorImage3} alt="Decor Image 3"/>
             <div id="datum-outer">
                 <div className="segment-title handwriting" style={{color: "black"}}>
-                    Dátum
+                    Vegyél részt a nagy napon
                 </div>
                 {/*<div id="datum-wrapper" style={{backgroundImage: `url(${backgroundImage2})`}}>*/}
                 <div id="datum-wrapper">
                     <div className="datum-content">
                         <div className="date-text">
-                            <div className="date-generic">VEGYÉL RÉSZT A NAGY NAPON</div>
+                            {/*<div className="date-generic">VEGYÉL RÉSZT A NAGY NAPON</div>*/}
                             <div className="line-container">
                                 <div className="horizontal-line"></div>
                                 <div className="actual-date"> 2024. Október 5.</div>
@@ -62,7 +62,7 @@ const App = () => {
             <div id="helyszin"></div>
             <img className="decor decor5" src={decorImage4} alt="Decor Image 5"/>
             <div id="helyszin-outer">
-                <div className="segment-title handwriting">Helyszín & tudnivalók</div>
+                <div className="segment-title handwriting">Helyszín <div className="andsign">&</div> tudnivalók</div>
                 <div className="helyszin-es-tudnivalok">
                     <div className="helyszin-container">
                         <div className="helyszin-title">
@@ -72,7 +72,7 @@ const App = () => {
                             <div className="sub-title">Szertatás:</div>
                             <div className="sub-text">&#8287;&#8287;&#8287;Gückler Károly kilátó, a Hármashatár-hegy tetején</div>
                             <div className="sub-title">Vacsora és lagzi:</div>
-                            <div className="sub-text">&#8287;&#8287;&#8287;Budapest, Hármashatárhegyi út, 3. -Horizont Rendezvényház</div>
+                            <div className="sub-text">&#8287;&#8287;&#8287;Horizont Rendezvényház, Budapest, Hármashatárhegyi út 3.</div>
                         </div>
                     </div>
                     <div className="helyszin-container">
@@ -84,8 +84,8 @@ const App = () => {
                             <div className="sub-text">&#8287;&#8287;&#8287;15:00
                             </div>
                             <div className="sub-title">Szállás:</div>
-                            <div className="sub-text">&#8287;&#8287;&#8287;Korlátozott mértékben, így előre kell egyeztetnünk. Kérlek hívd a vőlegényt
-                                (+36703486197) vagy a menyasszonyt (+36301952985), ha szükséged lesz a helyszínen szállásra
+                            <div className="sub-text">&#8287;&#8287;&#8287;Korlátozott mértékben elérhető, így előre egyeztetés szükséges. Kérlek hívd a vőlegényt
+                                (+36 70 348 6197) vagy a menyasszonyt (+36 30 195 2985), ha igényt tartanál a helyszínen szállásra.
                             </div>
                         </div>
                     </div>
