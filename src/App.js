@@ -63,6 +63,7 @@ const App = () => {
             <img className="decor decor5" src={decorImage4} alt="Decor Image 5"/>
             <div id="helyszin-outer">
                 <div className="segment-title handwriting">Helyszín <div className="andsign">&</div> tudnivalók</div>
+                <div className="googleForm"><a href="https://docs.google.com/forms/d/11num8gRay2QrTdex9d2vpXKmu4i612bbpIzAhxqAlVY/edit?ts=6696e568"><span className="kLetter"></span>KÉRLEK KATTINTS A KÉRDŐÍV KITÖLTÉSÉHEZ</a></div>
                 <div className="helyszin-es-tudnivalok">
                     <div className="helyszin-container">
                         <div className="helyszin-title">

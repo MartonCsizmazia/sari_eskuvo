@@ -190,9 +190,39 @@
 
 .helyszin-title {
   font-family: "Cormorant Garamond", serif;
-  font-size: 1.5rem; /* Increased font size for title */
+  font-size: 2.3rem; /* Increased font size for title */
   margin-bottom: 0.5rem; /* Added margin bottom for spacing between title and text */
   text-align: center;
+}
+
+.googleForm {
+  text-align: center;
+  margin-bottom: 3rem;
+  font-size: 1.5rem;
+}
+
+.googleForm a{
+  text-decoration: none;
+  border-width: 1px;
+  padding: 0.5rem;
+  /*border-style: solid;*/
+  /*border-color: black;*/
+  border-radius: 0.5rem;
+  background-color: #f2a83d;
+  transition: background-color 0.3s;
+}
+
+.googleForm a:hover {
+  background-color: #a2dfa2; /* Change 'yellow' to your desired hover color */
+}
+
+.googleForm a:visited {
+  color: inherit; /* This will set the color to be the same as the default link color */
+  text-decoration: none; /* Ensure text decoration is consistent */
+}
+
+.kLetter{
+  font-size: 2rem;
 }
 
 .helyszin-text {
@@ -295,6 +325,14 @@
 
   .datum-utani-kep{
     height: 16rem;
+  }
+
+  .helyszin-title {
+    font-size: 1.5rem; /* Increased font size for title */
+  }
+
+  .googleForm {
+    font-size: 1rem;
   }
 
   .helyszin-text {
