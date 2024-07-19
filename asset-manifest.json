@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/static/css/main.17aa717e.css",
+    "main.css": "/static/css/main.07569401.css",
     "main.js": "/static/js/main.93bca3a0.js",
     "static/media/IMG_3224-min.JPG": "/static/media/IMG_3224-min.2f83ad8f91d3c897d870.JPG",
     "static/media/IMG_3209-min.JPG": "/static/media/IMG_3209-min.3190f00a7c1b4cb2cc78.JPG",
@@ -16,11 +16,11 @@
     "static/media/great-vibes-vietnamese-400-normal.woff2": "/static/media/great-vibes-vietnamese-400-normal.f9dc7aec50196d6a92d0.woff2",
     "static/media/great-vibes-vietnamese-400-normal.woff": "/static/media/great-vibes-vietnamese-400-normal.f3e35abe465a0f6063b4.woff",
     "index.html": "/index.html",
-    "main.17aa717e.css.map": "/static/css/main.17aa717e.css.map",
+    "main.07569401.css.map": "/static/css/main.07569401.css.map",
     "main.93bca3a0.js.map": "/static/js/main.93bca3a0.js.map"
   },
   "entrypoints": [
-    "static/css/main.17aa717e.css",
+    "static/css/main.07569401.css",
     "static/js/main.93bca3a0.js"
   ]
 }
